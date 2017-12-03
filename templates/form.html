@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Page</title>
+</head>
+<body>
+
+	<p>Form Page</p>
+
+	<form method="POST" action="{{ url_for('form') }}">
+		{{ form.csrf_token }}
+		{{ form.url.label }}
+		{{ form.url }}
+		<input type="submit" name="" value="Submit">
+	</form>
+
+</body>
+</html>
+
+
+
+
